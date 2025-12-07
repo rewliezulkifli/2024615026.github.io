@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zulkflee - Career</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* INTERNAL CSS COPY */
+        :root { --bg-color: #ecf0f3; --text-main: #3c3e41; --text-light: #878e99; --accent-color: #ff014f; --shadow-light: #ffffff; --shadow-dark: #d1d9e6; --font-primary: 'Poppins', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: var(--bg-color); color: var(--text-main); font-family: var(--font-primary); line-height: 1.6; }
+        header { background-color: var(--bg-color); padding: 20px 50px; position: sticky; top: 0; z-index: 100; box-shadow: 0 10px 10px -10px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 700; font-size: 1.5rem; letter-spacing: 2px; text-transform: uppercase; color: var(--text-main); }
+        .logo span { color: var(--accent-color); }
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav ul li a { text-decoration: none; color: var(--text-light); font-size: 0.9rem; text-transform: uppercase; font-weight: 500; transition: color 0.3s ease; }
+        nav ul li a:hover, nav ul li a.active { color: var(--accent-color); }
+        .hire-btn { padding: 15px 30px; border-radius: 6px; background: linear-gradient(145deg, #e6e6e6, #ffffff); box-shadow: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light); color: var(--accent-color); text-decoration: none; font-weight: bold; transition: transform 0.2s; }
+        .hire-btn:hover { transform: translateY(-3px); }
+        main { max-width: 1200px; margin: 50px auto; padding: 0 20px; min-height: 80vh; }
+        .section-title { text-align: left; margin-bottom: 50px; }
+        .section-subtitle { color: var(--accent-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px; }
+        .section-main-title { font-size: 3rem; font-weight: 700; color: #1e2125; }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .neu-card { padding: 35px; background: linear-gradient(145deg, #e6e6e6, #ffffff); box-shadow: 10px 10px 19px var(--shadow-dark), -10px -10px 19px var(--shadow-light); border-radius: 20px; transition: 0.4s; }
+        .neu-card:hover { transform: translateY(-5px); background: linear-gradient(145deg, #ffffff, #e6e6e6); }
+        .neu-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: #1e2125; }
+        .neu-card p, .neu-card ul { color: var(--text-light); }
+        .neu-card ul { padding-left: 20px; margin-top: 15px; }
+        .meta-date { display: inline-block; font-size: 0.8rem; color: var(--accent-color); background: #fff; padding: 5px 10px; border-radius: 5px; margin-bottom: 15px; box-shadow: inset 3px 3px 6px var(--shadow-dark), inset -3px -3px 6px var(--shadow-light);}
+        @media (max-width: 768px) { nav { display: none; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">IN<span>BIO</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="career.html" class="active">Career</a></li>
+                <li><a href="interest.html">Interests</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="hire-btn">HIRE ME</a>
+    </header>
+
+    <main>
+        <div class="section-title">
+            <span class="section-subtitle">Experience</span>
+            <h2 class="section-main-title">Working History</h2>
+        </div>
+
+        <div class="card-grid" style="grid-template-columns: 1fr;"> 
+            <div class="neu-card">
+                <span class="meta-date">Aug 2024 - Present</span>
+                <h3>Senior Data Protection Engineer</h3>
+                <p><strong>OpenWave Computing, Kuala Lumpur</strong></p>
+                <ul>
+                    <li>Managed enterprise backup and storage infrastructure (Dell EMC & Veritas).</li>
+                    <li>Led technology refresh projects to enhance performance.</li>
+                    <li>Designed high-availability backup architectures integrating DataDomain deduplication.</li>
+                </ul>
+            </div>
+            <div class="neu-card">
+                <span class="meta-date">Nov 2021 - Aug 2024</span>
+                <h3>Tech Lead - Cloud & Data Protection</h3>
+                <p><strong>Tech Mahindra, Cyberjaya</strong></p>
+                <ul>
+                    <li>Managed enterprise cloud operations across AWS, Azure, and on-prem.</li>
+                    <li>Led large-scale data migrations to AWS S3 and Azure Blob Storage.</li>
+                    <li>Optimized cloud storage costs via lifecycle policies.</li>
+                </ul>
+            </div>
+            <div class="neu-card">
+                <span class="meta-date">Oct 2017 - Oct 2020</span>
+                <h3>Senior Advisor, IT Infrastructure</h3>
+                <p><strong>Dell EMC, Cyberjaya</strong></p>
+                <ul>
+                    <li>Engineered enterprise backup solutions using NetWorker and Avamar.</li>
+                    <li>Led capacity planning and performance tuning.</li>
+                    <li>Managed storage refresh projects integrating PowerProtect.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

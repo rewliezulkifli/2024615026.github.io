@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zulkflee - Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* INTERNAL CSS COPY */
+        :root { --bg-color: #ecf0f3; --text-main: #3c3e41; --text-light: #878e99; --accent-color: #ff014f; --shadow-light: #ffffff; --shadow-dark: #d1d9e6; --font-primary: 'Poppins', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: var(--bg-color); color: var(--text-main); font-family: var(--font-primary); line-height: 1.6; }
+        header { background-color: var(--bg-color); padding: 20px 50px; position: sticky; top: 0; z-index: 100; box-shadow: 0 10px 10px -10px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 700; font-size: 1.5rem; letter-spacing: 2px; text-transform: uppercase; color: var(--text-main); }
+        .logo span { color: var(--accent-color); }
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav ul li a { text-decoration: none; color: var(--text-light); font-size: 0.9rem; text-transform: uppercase; font-weight: 500; transition: color 0.3s ease; }
+        nav ul li a:hover, nav ul li a.active { color: var(--accent-color); }
+        .hire-btn { padding: 15px 30px; border-radius: 6px; background: linear-gradient(145deg, #e6e6e6, #ffffff); box-shadow: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light); color: var(--accent-color); text-decoration: none; font-weight: bold; transition: transform 0.2s; }
+        .hire-btn:hover { transform: translateY(-3px); }
+        main { max-width: 1200px; margin: 50px auto; padding: 0 20px; min-height: 80vh; }
+        .section-title { text-align: left; margin-bottom: 50px; }
+        .section-subtitle { color: var(--accent-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px; }
+        .section-main-title { font-size: 3rem; font-weight: 700; color: #1e2125; }
+        
+        /* Form & Contact Specific */
+        .contact-wrapper { max-width: 800px; margin: 0 auto; }
+        .neu-card { padding: 35px; background: linear-gradient(145deg, #e6e6e6, #ffffff); box-shadow: 10px 10px 19px var(--shadow-dark), -10px -10px 19px var(--shadow-light); border-radius: 20px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 10px; color: var(--text-light); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;}
+        .neu-input {
+            width: 100%; padding: 15px; background: #ecf0f3; border: none; border-radius: 10px;
+            box-shadow: inset 6px 6px 12px var(--shadow-dark), inset -6px -6px 12px var(--shadow-light);
+            color: var(--text-main); font-family: inherit;
+        }
+        .neu-input:focus { outline: 1px solid var(--accent-color); }
+        .submit-btn {
+            width: 100%; padding: 15px; border: none; background: linear-gradient(145deg, #e6e6e6, #ffffff);
+            box-shadow: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);
+            color: var(--accent-color); font-weight: bold; border-radius: 10px; cursor: pointer; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s;
+        }
+        .submit-btn:hover { transform: translateY(-3px); }
+
+        @media (max-width: 768px) { nav { display: none; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">IN<span>BIO</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="interest.html">Interests</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="hire-btn">HIRE ME</a>
+    </header>
+
+    <main>
+        <div class="section-title" style="text-align: center;">
+            <span class="section-subtitle">Contact</span>
+            <h2 class="section-main-title">Contact With Me</h2>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="neu-card">
+                <form action="#">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" class="neu-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="text" class="neu-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="neu-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" class="neu-input">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea rows="5" class="neu-input"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px; color: #3c3e41;">
+                <p><strong>Address:</strong> Shah Alam, Selangor, Malaysia</p>
+                <p><strong>Phone:</strong> +6 019 221 2173</p>
+                <p><strong>Email:</strong> rewlie@rewlie.com</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
